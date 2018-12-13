@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <div id='gameBoard' class="hidden">
+
+      <div id="score">
+        <p id='player1'></p>
+        <p id='player2'></p>
+      </div>
+      <div class="boardRow">
+        <div class="boardCell"><p></p></div>
+        <div class="boardCell"><p></p></div>
+        <div class="boardCell"><p></p></div>
+      </div>
+      <div class="boardRow">
+        <div class="boardCell"><p></p></div>
+        <div class="boardCell"><p></p></div>
+        <div class="boardCell"><p></p></div>
+      </div>
+      <div class="boardRow">
+        <div class="boardCell"><p></p></div>
+        <div class="boardCell"><p></p></div>
+        <div class="boardCell"><p></p></div>
+      </div>
+      <div id="displayArea" class="hidden">
+        <p id="results"></p>
+        <a class='again' onclick="resetGame()">Play Again</a>
+      </div>
+    </div>
+
+    <div id='options'>
+      <div id='players'>
+        <p>How many players?</p>
+        <a onclick="choosePlayers(1)">One Player</a>
+        <a onclick="choosePlayers(2)">Two Players</a>
+      </div>
+      <div id='piece' class="hidden">
+        <p>Player 1: X or O?</p>
+        <a onclick="choosePiece('X')">X</a>
+        <a onclick="choosePiece('O')">O</a>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

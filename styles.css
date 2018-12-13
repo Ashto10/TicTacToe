@@ -1,0 +1,112 @@
+body {
+  cursor: default;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: 'Ubuntu Mono', monospace;
+  text-transform: uppercase;
+}
+
+#gameBoard {
+  display: block;
+  margin: 10% auto;
+  width: 400px;
+}
+
+#options {
+  display: block;
+  margin: 10% auto 0;
+  width: 400px;
+}
+
+#options p {
+  font-size: 1.5em;
+  text-align: center;
+  clear: both;
+}
+
+#options a {
+  text-align: center;
+  width: 150px;
+  padding: 25px 0;
+}
+
+#options a:nth-of-type(even) {
+  float: right;
+}
+
+#options a:nth-of-type(odd) {
+  float: left;
+}
+
+.boardRow {
+  display: block;
+  clear: both;
+}
+
+.boardCell {
+  display: table;
+  float: left;
+  height: 119px;
+  width: 119px;
+  border: 2px solid black;
+  margin: 5px;
+
+}
+
+.free, .owned {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 3em;
+}
+
+#results, #score {
+  height: 30px;
+  display: block;
+  text-align: center;
+}
+
+#results {
+  clear: both;
+  padding-top: 0.5em;
+  font-size: 2em;
+}
+
+#player1, #player2 {
+  display: inline-block;
+  margin: 0;
+  width: 150px;
+}
+
+#player1 {
+  text-align: left;
+}
+
+#player2 {
+  text-align: right;
+}
+
+.again {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  text-align: center;
+}
+
+a {
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.hidden * {
+  display: none;
+}
